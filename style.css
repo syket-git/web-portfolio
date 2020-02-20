@@ -34,8 +34,10 @@ h2{
     text-transform: uppercase;
 }
 section{
-    height:500px;
+    min-height:500px;
     margin-bottom: 100px;
+    padding-bottom: 50px;
+    overflow: hidden;
 }
 .top-banner{
     background-image: url("images/top-banner.png");
@@ -59,6 +61,7 @@ section{
     background-image: url("images/exp-bg.png");
     background-repeat: no-repeat;
     background-position: left;
+    padding-bottom: 50px;
 }
 
 #full-stack{
@@ -75,4 +78,39 @@ section{
 
 .footer{
     text-align:center;
+}
+
+/* Responsive */
+
+
+@media all and (max-width: 795px){
+    section{
+        margin-bottom: 0px !important;
+    }
+    .welcome-section{
+        text-align: center;
+    }
+    .img{
+        margin-top: 50px;
+    }
+    .welcome {
+        margin-bottom: -39px;
+    }
+    .half-width{
+        width: 80%;
+        float:none;
+        display: block;
+        margin: auto;
+        margin-left: 5%;
+        padding-left: 2%;
+    
+    }
+    .single-experience{
+        box-shadow: 10px 20px 40px gray;
+        border-radius: 5px;
+        min-height: 70%;
+        padding-bottom: 10px;
+        background-color:white;
+    }
+    
 }
